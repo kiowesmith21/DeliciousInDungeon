@@ -1,27 +1,28 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
 <>
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <nav className="fixed w-full z-20 top-0 start-0 bg-dungeon border-5px border-y-4 border-dungeon-dark">
         <div className="max-w-screen-xl  justify-between flex flex-wrap items-center mx-auto p-4">
-            <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap ">Flowbite</span>
-            </a>
+                <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span>
+            </Link>
             <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+                <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                 <li>
-                    <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 " aria-current="page">Characters</a>
+                    <Link to="/characters" className="block py-2 px-3 text-white md:hover:font-bold md:p-0 ">Characters</Link> 
                 </li>
                 <li>
-                    <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Monsters</a>
+                    <Link to="/monsters" className="block py-2 px-3 text-white md:hover:font-bold md:p-0 ">Monsters</Link> 
                 </li>
                 <li>
-                    <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Recipes</a>
+                    <Link to="/recipes" className="block py-2 px-3 text-white md:hover:font-bold md:p-0 ">Recipes</Link> 
                 </li>
                 <li>
-                    <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Games</a>
+                    <Link to="/games" className="block py-2 px-3 text-white md:hover:font-bold md:p-0 ">Games</Link> 
                 </li>
                 </ul>
             </div>

@@ -15,15 +15,15 @@ const Home = () => {
       </div>
     </div>
 
-    <div className='w-full h-auto max-w-full flex flex-row align-middle justify-center md:h-[480px] py-10' id="trailer">
+    <div className='w-full h-auto max-w-full flex flex-row align-middle justify-center py-10 bg-dungeon-light' id="trailer">
     <iframe width="928" height="522" src="https://www.youtube.com/embed/aXfVHMILKJg" title="Delicious in Dungeon | Official Trailer 2 | Netflix" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
     </div>
 
-    <div className='w-full h-auto max-w-full flex flex-row'>
-      <img src="https://static.zerochan.net/Dungeon.Meshi.1024.3971909.webp" alt="" className='w-1/6 h-auto'/>
-      <div className='flex flex-col'>
-        <h1>Embrace Food!</h1>
-        <p>bunch of nonsense</p>
+    <div className='w-full max-w-full flex flex-row items-center justify-evenly bg-dungeon p-5'>
+      <img src="https://static.zerochan.net/Dungeon.Meshi.1024.3971909.webp" alt="" className='w-1/3 h-auto'/>
+      <div className='flex flex-col text-white'>
+        <h1 className='font-bold text-4xl'>Embrace Food!</h1>
+        <p>Just a bunch of nonsense</p>
       </div>
     </div>
   </div>
