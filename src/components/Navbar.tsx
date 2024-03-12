@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
 <>
-    <nav className="fixed w-full z-20 top-0 start-0 bg-dungeon border-5px border-y-4 border-dungeon-dark">
+    <nav className="fixed w-full z-20 top-0 start-0 bg-dungeon-light border-5px border-y-4 border-dungeon-dark">
         <div className="max-w-screen-xl  justify-between flex flex-wrap items-center mx-auto p-4">
             <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />

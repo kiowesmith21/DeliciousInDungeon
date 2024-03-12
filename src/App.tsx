@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Characters from './pages/Characters';
+import Monsters from './pages/Monsters';
+import Recipes from './pages/Recipes';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/characters" element={<Characters />} />
+                <Route path="/monsters" element={<Monsters />} />
+                <Route path="/recipes" element={<Recipes />} />
             </Routes> 
         </div> 
         <Footer />
