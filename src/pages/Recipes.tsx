@@ -1,9 +1,15 @@
 import React from 'react'
 import RECIPES from '../constants/constants';
+import { Link } from 'react-router-dom';
+import { useDishContext } from '../config/DishContext';
 
 const Recipes = () => {
 
+  const { updateDish } = useDishContext();
 
+  function handleClick(newName: string, newDesc: string, newRecipe: string, newImage: string) {
+    updateDish(newName, newDesc, newRecipe, newImage)
+  }
 
   return (
     <>
@@ -15,9 +21,9 @@ const Recipes = () => {
         <div className='flex flex-col items-center w-1/4'>
             <h1 className='text-3xl font-bold pb-5'>{RECIPES.KAKIAGE.NAME}</h1>
             <p className='font-medium text-xl pb-5'>{RECIPES.KAKIAGE.DESCRIPTION}</p>
-            <a href="/dish" className='font-medium text-xl hover:font-bold'>
-              <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-5 py-2.5 me-2 mb-2">View Recipe</button>
-            </a>
+            <Link to="/dish" className='font-medium text-xl hover:font-bold'>
+              <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-5 py-2.5 me-2 mb-2" onClick={() => handleClick(RECIPES.KAKIAGE.NAME, RECIPES.KAKIAGE.DESCRIPTION, RECIPES.KAKIAGE.RECIPE, RECIPES.KAKIAGE.IMAGE)}>View Recipe</button>
+            </Link>
         </div>
     </div>
 
@@ -25,9 +31,9 @@ const Recipes = () => {
         <div className='flex flex-col items-center w-1/4'>
           <h1 className='text-3xl font-bold pb-5'>{RECIPES.ROASTBASILISK.NAME}</h1>
           <p className='font-medium text-xl pb-5'>{RECIPES.ROASTBASILISK.DESCRIPTION}</p>
-          <a href="/dish" className='font-medium text-xl hover:font-bold'>
-            <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-5 py-2.5 me-2 mb-2">View Recipe</button>
-          </a>
+          <Link to="/dish" className='font-medium text-xl hover:font-bold'>
+            <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-full text-sm px-5 py-2.5 me-2 mb-2" onClick={() => handleClick(RECIPES.ROASTBASILISK.NAME, RECIPES.ROASTBASILISK.DESCRIPTION, RECIPES.ROASTBASILISK.RECIPE, RECIPES.ROASTBASILISK.IMAGE)}>View Recipe</button>
+          </Link>
         </div>
         <img src={RECIPES.ROASTBASILISK.IMAGE} alt="" 
         className='border-4 border-dungeon-dark w-1/2'/>
