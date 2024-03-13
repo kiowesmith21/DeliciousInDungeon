@@ -19,6 +19,24 @@ const DISHES = {
      }
 }
 
+export const MONSTERS = { 
+   'BIGBAT': {
+       'NAME': 'Big Bat',
+
+       'DESCRIPTION': "Big Bats resemble normal bats, but are much larger, about the height of a Tall-man. Their bones are a particular marvel, being light yet strong.",
+
+       'IMAGE': "https://i.ytimg.com/vi/W0lmuyjFTYE/maxresdefault.jpg"
+    },
+    'BASILISK': {
+       'NAME': 'Basilisk',
+
+       'DESCRIPTION': "Basilisks appear to be chickens with a snake for a tail. However, the snake's portion is actually though to be the head, since if a Basilisk is cut in half, the part with the snake head lives longer. The dividing line between head and tail is a point of contention.",
+ 
+       'IMAGE': "https://i.ytimg.com/vi/pbzf7-Sa3E8/maxresdefault.jpg"
+    }
+}
+
 Object.freeze(DISHES);
+Object.freeze(MONSTERS);
 
 export default DISHES;
