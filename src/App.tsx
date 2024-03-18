@@ -9,6 +9,7 @@ import Monsters from './pages/Monsters';
 import Recipes from './pages/Recipes';
 import Dish from './pages/Dish';
 import { DishContextProvider } from './config/DishContext';
+import Games from './pages/Games';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
                   <Route path="/monsters" element={<Monsters />} />
                   <Route path="/recipes" element={<Recipes />} />
                   <Route path="/dish" element={<Dish />} />
+                  <Route path="/games" element={<Games />} />
               </Routes> 
           </div> 
           <Footer />
