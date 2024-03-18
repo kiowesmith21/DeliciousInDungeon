@@ -5,4 +5,4 @@ This project uses React Routes, a custom Context, and custom Tailwind classes.
 INSTALL INSTRUCTIONS
 This project uses React, Typescript, and Tailwind CSS.
 
-NPM must be initialized using "npm i" in the terminal, make sure you are in the project's outer-most directory.
+NPM must be initialized using "npm i" in the terminal, make sure you are in the project's outer-most directory. This should generate the necessary node modules.
