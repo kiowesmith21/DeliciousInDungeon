@@ -6,3 +6,5 @@ INSTALL INSTRUCTIONS
 This project uses React, Typescript, and Tailwind CSS.
 
 NPM must be initialized using "npm i" in the terminal, make sure you are in the project's outer-most directory. This should generate the necessary node modules.
+
+It will take a while but afterward, just run "npm start" and the site should open in your browser.
